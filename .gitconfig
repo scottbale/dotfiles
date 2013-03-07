@@ -1,0 +1,4 @@
+[user]
+	email = scott@balehaus.org
+[diff]
+	external = /home/scott/bin/diff.py

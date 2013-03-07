@@ -1,0 +1,4 @@
+Config { position = TopW L 100
+       , bgColor = "black"
+       , fgColor = "grey"
+       }

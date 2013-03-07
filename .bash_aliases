@@ -1,0 +1,6 @@
+alias gs="git status"
+alias lt="ls -lAtr"
+alias battery="acpi"
+alias xclip="xclip -selection c"
+alias pbcopy="xclip -selection c"
+alias jdk=". ~/.set-jdk"

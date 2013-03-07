@@ -1,0 +1,51 @@
+current_jdk ()
+{
+  echo "\$JDK_HOME=$JDK_HOME"
+}
+
+help ()
+{
+  echo "Set the JDK for the current shell"
+  echo "one of these: ${!jdkmap[*]} reset"
+}
+
+reset ()
+{
+  JDK_HOME=/usr/lib/jvm/java-6-openjdk
+  PATH=$MY_PATH
+}
+
+setjdk ()
+{
+  JDK_HOME=${jdkmap[$1]}
+  PATH=$JDK_HOME/jre/bin:$MY_PATH
+}
+
+# No args, just echo current JDK
+if [ $# -ne 1 ]
+then
+  current_jdk
+  return
+fi
+
+# associative array of JDK codes to paths
+declare -A jdkmap
+jdkmap[j7]=~/sandbox/jdk1.7.0_11_64bit
+jdkmap[j732]=~/sandbox/jdk1.7.0_11
+jdkmap[oj7]=/usr/lib/jvm/java-7-openjdk
+jdkmap[oj6]=/usr/lib/jvm/java-6-openjdk
+
+if [[ $1 == *h* || $1 == *\?* ]]
+then
+  help
+elif [[ $1 == reset ]]
+then
+  reset
+elif [[ -z "${jdkmap[$1]}" ]]
+then
+  echo "$1 is not a valid option"
+  help
+else
+  setjdk $1
+fi  
+current_jdk
