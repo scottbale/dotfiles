@@ -110,5 +110,5 @@ fi
 # Java JDK
 export PATH=$PATH:~/bin/:~/sandbox/loom/bin:/usr/lib/idea-IC-107.587/bin
 export MY_PATH=$PATH
-export JDK_HOME=/usr/lib/jvm/java-6-openjdk
+export JDK_HOME=/usr/lib/jvm/java-7-openjdk-amd64
 export EDITOR=zile

@@ -11,7 +11,7 @@ help ()
 
 reset ()
 {
-  JDK_HOME=/usr/lib/jvm/java-6-openjdk
+  JDK_HOME=/usr/lib/jvm/java-7-openjdk-amd64
   PATH=$MY_PATH
 }
 
