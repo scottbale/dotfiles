@@ -19,3 +19,8 @@
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
 (set-face-attribute 'default nil :height 120)
+
+(autoload 'markdown-mode "gfm-mode"
+   "Major mode for editing Markdown files" t)
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
