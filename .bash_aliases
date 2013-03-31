@@ -1,0 +1,5 @@
+alias lt='ls -latr'
+alias ll='ls -l'
+alias la='ls -a'
+alias cls='clear'
+alias gs='git status'
