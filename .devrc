@@ -5,35 +5,10 @@
 # colon-separated list of suffixes to ignore in tab completion
 export FIGNORE=.svn
 
-export DYLD_LIBRARY_PATH=/Applications/YourKitJavaProfiler7.0.5.app/bin/mac
-
-export SUN_HOME=$COMPONENTS_HOME/Sun
-export APACHE_HOME=$COMPONENTS_HOME/apache
-
-export ANT_HOME=$APACHE_HOME/apache-ant-1.7.0
 export MAVEN_HOME=$COMPONENTS_HOME/apache-maven-2.0.9
-export BCEL_HOME=$COMPONENTS_HOME/bcel-5.2
-export JAVA_HOME_14=/System/Library/Frameworks/JavaVM.framework/Versions/1.4/Home
-export JAVA_HOME_15=/System/Library/Frameworks/JavaVM.framework/Versions/1.5/Home
 export JAVA_HOME_16=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
 export JAVA_HOME=$JAVA_HOME_16
-export JAVA_15_HOME=$JAVA_HOME_15
 export JAVA_16_HOME=$JAVA_HOME_16
-export ANDROID_HOME=/Users/sbale/sandbox/android/android-sdk-mac_86
 
-#export PATH=/usr/local/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin:$COMPONENTS_HOME/jadmx158:$PATH:$TC/bin:$GROOVY_HOME/bin
-#export PATH=/usr/local/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin:$COMPONENTS_HOME/jadmx158:$PATH
 export SYKOPATH=$PATH
 source .path
-export SVN_EDITOR=zile
-
-alias c2h='java -cp $BCEL_HOME/bcel-5.2.jar org.apache.bcel.util.Class2HTML'
-alias ff='open -a /Applications/Firefox.app'
-alias tw='open -a /Applications/TextWrangler.app'
-alias java4='export JAVA_HOME=$JAVA_HOME_14'
-alias java5='export JAVA_HOME=$JAVA_HOME_15'
-alias java6='export JAVA_HOME=$JAVA_HOME_16'
-
-alias repath='source $HOME/.path'
-alias domysql='sudo /usr/local/mysql/bin/mysqld_safe --user=mysql'
-

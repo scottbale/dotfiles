@@ -1,1 +1,1 @@
-export PATH=/Users/sbale/bin:/usr/local/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:$ANT_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools:/usr/local/mysql/bin:$COMPONENTS_HOME/jadmx158:$SYKOPATH
+export PATH=/Users/sbale/bin:/usr/local/bin:$JAVA_HOME/bin:$MAVEN_HOME/bin:/usr/local/mysql/bin:$SYKOPATH
