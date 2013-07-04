@@ -9,7 +9,7 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings color-theme-solarized nrepl haskell-mode markdown-mode)
+(defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings color-theme-solarized nrepl haskell-mode markdown-mode js2-mode)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)

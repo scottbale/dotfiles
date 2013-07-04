@@ -8,6 +8,7 @@
 .adobe
 .bash_history
 .bash_logout
+.cabal
 .cache
 .compiz-1
 .config
@@ -51,6 +52,7 @@
 .mission-control/
 .mozilla/
 .mysql_history
+.npm
 .pam_environment
 .pki/
 .printer-groups.xml
