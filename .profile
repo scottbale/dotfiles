@@ -18,5 +18,8 @@ fi
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
+    PATH="$HOME/bin:$HOME/.cabal/bin:$PATH"
+    MY_PATH="$PATH"
+    JDK_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
+    EDITOR="zile"
 fi

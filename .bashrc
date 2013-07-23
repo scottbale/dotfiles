@@ -106,9 +106,3 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
-
-# Java JDK
-export PATH=$PATH:~/bin/:~/.cabal/bin:~/sandbox/loom/bin:/usr/lib/idea-IC-107.587/bin
-export MY_PATH=$PATH
-export JDK_HOME=/usr/lib/jvm/java-7-openjdk-amd64
-export EDITOR=zile
