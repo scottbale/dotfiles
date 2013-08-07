@@ -7,4 +7,11 @@
 .recentf
 .ssh/
 .ido.last
-.lein
+.lein# On branch ubuntu-server
+.Xauthority
+.cabal/
+.gem/
+.ghc/
+.lein/
+.m2/
+
