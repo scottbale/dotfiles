@@ -29,7 +29,7 @@
  )
 
 (if window-system
-    (load-theme 'solarized-dark t)
+    (load-theme 'solarized-light t)
   (load-theme 'tango-dark t))
 
 (setq mac-option-key-is-meta nil)
