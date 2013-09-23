@@ -6,6 +6,7 @@
 .dropbox
 .dropbox-dist
 .gnupg
+.hgrc
 .recentf
 .ssh/
 .ido.last
