@@ -3,6 +3,8 @@
 .bash_history
 .bash_logout
 .cache
+.dropbox
+.dropbox-dist
 .gnupg
 .recentf
 .ssh/

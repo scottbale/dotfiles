@@ -9,7 +9,7 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings color-theme-solarized nrepl haskell-mode markdown-mode js2-mode)
+(defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings color-theme-solarized nrepl haskell-mode markdown-mode)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -31,4 +31,5 @@
 
 (if window-system
     (load-theme 'solarized-dark t)
-  (load-theme 'solarized-light t))
+  (progn (setq solarized-termcolor 256)
+         (load-theme 'solarized-light t)))
