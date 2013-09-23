@@ -32,4 +32,4 @@
 (if window-system
     (load-theme 'solarized-dark t)
   (progn (setq solarized-termcolor 256)
-         (load-theme 'solarized-light t)))
+         (load-theme 'misterioso t)))
