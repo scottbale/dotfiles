@@ -2,3 +2,5 @@
 	email = scott@balehaus.org
 [alias]
 	meld = difftool -y -t meld
+        co = checkout
+	up = checkout
