@@ -17,5 +17,6 @@
 .ghc/
 .lein/
 .m2/
+.npm/
 .lesshst
 
