@@ -6,6 +6,7 @@
 .VirtualBox
 .Xauthority
 .adobe
+.audacity-data/
 .bash_history
 .bash_logout
 .cabal
