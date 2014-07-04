@@ -20,6 +20,7 @@
 .dmenu_cache
 .dmrc
 .dropbox-dist
+.dropbox-master
 .dropbox
 .esd_auth
 .eshell
@@ -33,7 +34,9 @@
 .gksu.lock
 .gmrun_history
 .gnome2/
+.gnome/
 .gnupg/
+.grunt-init/
 .gstreamer-0.10/
 .gtk-bookmarks
 .hgk
@@ -50,10 +53,12 @@
 .local/
 .m2/
 .macromedia/
+.minecraft/
 .mission-control/
 .mozilla/
 .mysql_history
 .npm
+.npmrc
 .pam_environment
 .pki/
 .printer-groups.xml
@@ -64,6 +69,7 @@
 .rnd
 .selected_editor
 .slime-history.eld
+.speech-dispatcher/
 .ssh
 .subversion_IDEA/
 .sudo_as_admin_successful
