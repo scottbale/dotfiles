@@ -1,5 +1,6 @@
 [user]
 	email = scott@balehaus.org
+	name = Scott Bale
 [alias]
     co = checkout
     up = checkout
