@@ -36,6 +36,7 @@
 .gnome2/
 .gnome/
 .gnupg/
+.gradle
 .grunt-init/
 .gstreamer-0.10/
 .gtk-bookmarks
