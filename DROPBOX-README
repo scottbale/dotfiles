@@ -3,6 +3,7 @@
 
 misc cmd history...
   786  bin/dropbox.py help
+
   787  bin/dropbox.py status
   788  bin/dropbox.py exclude add ~/Dropbox/Photos/
        wget -O ~/bin/dropbox.py "http://www.dropbox.com/download?dl=packages/dropbox.py" 

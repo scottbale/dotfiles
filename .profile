@@ -23,3 +23,7 @@ if [ -d "$HOME/bin" ] ; then
     JDK_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
     EDITOR="zile"
 fi
+
+NODE_PATH="/usr/local/lib/node_modules"
+EDITOR="zile"
+JDK_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
