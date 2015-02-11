@@ -1,5 +1,10 @@
 ;; https://github.com/technomancy/emacs-starter-kit
 
+(setq mac-option-key-is-meta nil)
+(setq mac-command-key-is-meta t)
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier nil)
+
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
@@ -9,7 +14,7 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings color-theme-solarized nrepl haskell-mode markdown-mode)
+(defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings color-theme-solarized haskell-mode markdown-mode)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -32,7 +37,3 @@
     (load-theme 'solarized-light t)
   (load-theme 'tango-dark t))
 
-(setq mac-option-key-is-meta nil)
-(setq mac-command-key-is-meta t)
-(setq mac-command-modifier 'meta)
-(setq mac-option-modifier nil)
