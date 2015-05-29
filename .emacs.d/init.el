@@ -32,5 +32,5 @@
  )
 
 (if window-system
-    (load-theme 'solarized-dark t)
-  (load-theme 'misterioso t))
+    (load-theme 'zenburn t)
+  (load-theme 'zenburn t))
