@@ -5,7 +5,7 @@
     co = checkout
     up = checkout
     st = status
-    lg   = log --date=short --pretty=format:"%x1b[31m%h%x1b[0m%x20%ad%x1b[33m%x20%an%x1b[0m%x20%s"
+    lg   = log --date=short                                      --pretty=format:"%x1b[31m%h%x1b[0m%x20%ad%x1b[33m%x20%an%Cgreen%d%Creset%x1b[0m%x20%s"
     glog = log --graph --full-history --all --date=short --color --pretty=format:"%x1b[31m%h%x09%x1b[32m%d%x1b[0m%x20%ad%x09%an%x09%s"
 [core]
 	editor = zile
