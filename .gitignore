@@ -17,7 +17,7 @@
 .cabal/
 .gem/
 .ghc/
-.lein/
+.lein/self-installs
 .m2/
 .node-gyp/
 .npm/
