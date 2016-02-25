@@ -1,0 +1,5 @@
+alias gs="git status"
+alias ll="ls -lA"
+alias lt="ls -lAtr"
+alias la="ls -a"
+alias serve="python -m SimpleHTTPServer"

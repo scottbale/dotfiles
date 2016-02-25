@@ -1,5 +1,6 @@
 /*
 !.*
+.*/
 .bash_history
 .CFUserTextEncoding
 .dropbox
@@ -9,3 +10,10 @@
 .oracle_jre_usage/
 .vim/
 .viminfo
+.ansible.cfg
+.common_env
+.jline-jython.history
+.lesshst
+.sshagent
+.v8flags*
+.wget-hsts
