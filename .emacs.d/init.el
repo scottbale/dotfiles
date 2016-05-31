@@ -8,13 +8,15 @@
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa-stable.milkbox.net/packages/") t)
 (package-initialize)
 
 (when (not package-archive-contents)
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '( starter-kit starter-kit-lisp starter-kit-bindings zenburn-theme cider clojure-mode paredit haskell-mode markdown-mode js2-mode php-mode  ) 
+(defvar my-packages '( better-defaults smex ido-ubiquitous idle-highlight-mode find-file-in-project zenburn-theme color-theme-solarized cider clojure-mode paredit haskell-mode markdown-mode js2-mode php-mode yaml-mode ) 
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
@@ -46,20 +48,7 @@
     (load-theme 'solarized-dark t)
   (load-theme 'zenburn t))
 
-
-;; below this line are the previous contents of <username>.el
-;; ----------------------------------------------------------
-
-;; (global-set-key (kbd "<C-tab>") 'other-window)
 (global-set-key (kbd "<C-M-return>") 'new-frame)
-;; ------------------------------------------
-;; (global-set-key (kbd "C-S-f") 'rgrep)
-;; see also:
-;; help v [describe variable] case-fold-search
-;; M-x set-variable
-;; ------------------------------------------
-;; (global-set-key (kbd "C-S-n") 'locate)
-;; (global-set-key (kbd "C-S-n") 'find-name-dired)
 
 ;; File finding - from technomancy starter kit 1.x, removed in 2.x
 (recentf-mode t)
@@ -67,9 +56,6 @@
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
 (set-face-attribute 'default nil :height 120)
-
-;; disable flyspell in markdown-mode (enabled in starter kit)
-(remove-hook 'text-mode-hook 'turn-on-flyspell)
 
 (autoload 'gfm-mode "markdown-mode"
    "Major mode for editing Markdown files" t)
