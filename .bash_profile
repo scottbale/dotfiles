@@ -5,7 +5,9 @@
 #export PS1="[\w]$ "
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home
-
+export PYTHONPATH="/Users/scottbale/dev/automaton":${PYTHONPATH}
+export PATH="$PATH:/Users/scottbale/dev/automaton/bin"
+export AUTOMATON_PATH="/Users/scottbale/dev/automaton"
 # PATH=/Users/sbale/bin:/Users/sbale/.cabal/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH
 
 # ssh agent: create or reuse existing (if creating, identities will
