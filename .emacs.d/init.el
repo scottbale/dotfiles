@@ -75,6 +75,10 @@
             ;; Default indentation is usually 2 spaces, changing to 4.
             (set (make-local-variable 'sgml-basic-offset) 4)))
 
+(add-hook 'prog-mode-hook
+          (lambda ()
+            (idle-highlight-mode t)))
+
 ;; ffip
 (setq ffip-prefer-ido-mode t)
 (global-set-key (kbd "C-S-n") 'find-file-in-project)
