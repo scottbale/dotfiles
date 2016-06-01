@@ -50,10 +50,11 @@
 
 (global-set-key (kbd "<C-M-return>") 'new-frame)
 
-;; File finding - from technomancy starter kit 1.x, removed in 2.x
+;; keybindings I got used to from technomancy starter kit
 (recentf-mode t)
 (global-set-key (kbd "C-x f") 'recentf-open-files)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
+(global-set-key (kbd "M-x") 'smex)
 
 (set-face-attribute 'default nil :height 120)
 
