@@ -48,13 +48,15 @@
     (load-theme 'solarized-dark t)
   (load-theme 'zenburn t))
 
-(global-set-key (kbd "<C-M-return>") 'new-frame)
+(when window-system
+  (setq frame-title-format '(buffer-file-name "%f" ("%b"))))
 
 ;; keybindings I got used to from technomancy starter kit
 (recentf-mode t)
 (global-set-key (kbd "C-x f") 'recentf-open-files)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "C-c r") 'revert-buffer)
 
 (set-face-attribute 'default nil :height 120)
 
