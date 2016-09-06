@@ -13,12 +13,13 @@ export AUTOMATON_PATH="/Users/scottbale/dev/automaton"
 # ssh agent: create or reuse existing (if creating, identities will
 # have to be manually added via ssh-add)
 if [ -f "$HOME/.sshagent" ] ; then
-    . "$HOME/.sshagent"
+    . "$HOME/.sshagent" > /dev/null
 fi
 
 # if no PID value, or process no longer exists...
-if ! $(ps -p "$SSH_AGENT_PID" > /dev/null 2>&1)
+#if ! $(ps -p "$SSH_AGENT_PID" > /dev/null 2>&1)
+if [ -z $SSH_AGENT_PID ] || [ "ssh-agent" != $(ps -c -o comm= -p $SSH_AGENT_PID) ]
 then
     ssh-agent > "$HOME/.sshagent"
-    . "$HOME/.sshagent"
+    . "$HOME/.sshagent" > /dev/null
 fi
