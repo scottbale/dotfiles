@@ -17,7 +17,7 @@ if [ -f "$HOME/.sshagent" ] ; then
 fi
 
 # if no PID value, or process no longer exists...
-if [ -z $SSH_AGENT_PID ] || [ "ssh-agent" != $(ps -c -o comm= -p $SSH_AGENT_PID) ]
+if [ -z $SSH_AGENT_PID ] || [ "$(ps -c -o comm= -p $SSH_AGENT_PID)" != "ssh-agent" ]
 then
     ssh-agent > "$HOME/.sshagent"
     . "$HOME/.sshagent" > /dev/null
