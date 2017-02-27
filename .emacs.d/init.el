@@ -3,6 +3,8 @@
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier nil)
 (setq custom-file "~/.emacs.d/custom.el")
+(if (not (file-exists-p custom-file))
+    (write-region "" nil custom-file))
 
 (require 'package)
 ;; (add-to-list 'package-archives
@@ -41,6 +43,7 @@
 (ivy-mode 1)
 (setq ivy-use-virtual-buffers t)
 (global-set-key (kbd "C-s") 'swiper)
+(global-set-key (kbd "C-r") 'swiper)
 (global-set-key (kbd "C-x f") 'ivy-recentf)
 (global-set-key (kbd "C-x b") 'ivy-switch-buffer)
 (global-set-key (kbd "M-x") 'counsel-M-x)

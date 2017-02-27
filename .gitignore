@@ -17,3 +17,8 @@
 .sshagent
 .v8flags*
 .wget-hsts
+.automaton.conf
+.dir-locals.el
+.sh_history
+.opsc-ticket-description.conf
+.rnd
