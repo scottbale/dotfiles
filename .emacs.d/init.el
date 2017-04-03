@@ -17,7 +17,7 @@
   (package-refresh-contents))
 
 ;; Add in your own as you wish:
-(defvar my-packages '( better-defaults idle-highlight-mode ivy swiper counsel find-file-in-project
+(defvar my-packages '( better-defaults idle-highlight-mode ivy swiper counsel projectile
                                        zenburn-theme color-theme-solarized cider clojure-mode paredit
                                        haskell-mode markdown-mode js2-mode php-mode yaml-mode) 
   "A list of packages to ensure are installed at launch.")
@@ -40,7 +40,6 @@
 (global-set-key (kbd "C-c r") 'revert-buffer)
 (global-set-key (kbd "C-+") 'text-scale-increase)
 (global-set-key (kbd "C--") 'text-scale-decrease)
-
 
 ;; ivy
 (ivy-mode 1)
@@ -86,8 +85,10 @@
   ;; need a binding that works in the terminal
   '(define-key paredit-mode-map (kbd "M-)") 'paredit-forward-slurp-sexp))
 
-;; ffip
-(global-set-key (kbd "C-S-n") 'find-file-in-project)
+;; projectile
+(projectile-global-mode +1)
+(setq projectile-completion-system 'ivy)
+;; (global-set-key (kbd "C-S-n") 'projectile-discover-projects-in-directory)
 
 ;; for flyspell in gfm-mode
 (setq-default ispell-program-name "aspell")
