@@ -5,10 +5,11 @@
 #export PS1="[\w]$ "
 
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home
-export PYTHONPATH="/Users/scottbale/dev/automaton:/Users/scottbale/dev/py"
-export PATH="$PATH:/Users/scottbale/dev/automaton/bin:/Users/scottbale/bin"
-export AUTOMATON_PATH="/Users/scottbale/dev/automaton"
-# PATH=/Users/sbale/bin:/Users/sbale/.cabal/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH
+# export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-12.jdk/Contents/Home
+# export PYTHONPATH="/Users/scottbale/dev/automaton:/Users/scottbale/dev/py"
+# export PATH="$PATH:/Users/scottbale/dev/automaton/bin:/Users/scottbale/bin"
+export PATH="$PATH:/Users/scottbale/bin"
+# export AUTOMATON_PATH="/Users/scottbale/dev/automaton"
 
 # ssh agent: create or reuse existing (if creating, identities will
 # have to be manually added via ssh-add)
