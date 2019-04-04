@@ -23,6 +23,8 @@
 
 ;; Keep custom settings in a separate file.
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(if (not (file-exists-p custom-file))
+    (write-region "" nil custom-file))
 (load custom-file)
 
 ;; Load global editor settings.
