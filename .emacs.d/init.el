@@ -38,6 +38,12 @@
 (package-initialize)
 (require 'setup-package)
 
+;; pin versions of some packages
+(setq package-load-list
+      '((projectile "1.0.0")
+        (cider "0.17.0")
+        all))
+
 ;; Setup ivy early in case of downstream errors
 (install-missing-packages
  '(ivy))
