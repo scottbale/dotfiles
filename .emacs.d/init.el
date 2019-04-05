@@ -3,6 +3,8 @@
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
+(load-theme 'misterioso t)
+
 ;; OS X meta keys
 (setq mac-option-key-is-meta nil)
 (setq mac-command-key-is-meta t)
