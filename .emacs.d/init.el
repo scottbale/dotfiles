@@ -67,7 +67,6 @@
    ))
 
 ;; Load configurations.
-
 (require 'setup-projectile)
 (require 'setup-markdown)
 (require 'setup-color-theme)
@@ -76,5 +75,6 @@
 (require 'setup-flycheck)
 (require 'setup-flyspell)
 
-;; Key bindings.
+;; Key bindings and Setup ivy again now that all packages have been installed
 (require 'key-bindings)
+(require 'setup-ivy)
