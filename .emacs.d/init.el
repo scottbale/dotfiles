@@ -3,6 +3,7 @@
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
+;; Set up stock dark color theme early in case of downstream errors
 (load-theme 'misterioso t)
 
 ;; OS X meta keys
@@ -13,10 +14,6 @@
 
 ;; No splash screen.
 (setq inhibit-startup-message t)
-
-;; Use Inconsolata where available.
-;;(when (member "Inconsolata" (font-family-list))
-;;  (set-face-attribute 'default nil :font "Inconsolata-12"))
 
 ;; Set up load paths.
 (setq settings-dir
