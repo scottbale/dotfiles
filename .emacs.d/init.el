@@ -29,22 +29,14 @@
 ;; Load global editor settings.
 (require 'global-settings)
 
-;; Key bindings.
-(require 'key-bindings)
-
 ;; Make sure packages are installed.
 (setq package-enable-at-startup nil)
 (package-initialize)
 (require 'setup-package)
 
-;; Setup ivy early in case of downstream errors
 (install-missing-packages
- '(ivy))
-
-(require 'setup-ivy)
-
-(install-missing-packages
- '(better-defaults
+ '(ivy
+   better-defaults
    idle-highlight-mode
    swiper
    counsel
@@ -71,7 +63,5 @@
 (require 'setup-paredit)
 (require 'setup-flycheck)
 (require 'setup-flyspell)
-
-;; Key bindings and Setup ivy again now that all packages have been installed
-(require 'key-bindings)
 (require 'setup-ivy)
+(require 'key-bindings)
