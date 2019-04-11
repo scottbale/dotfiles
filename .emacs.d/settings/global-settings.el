@@ -2,9 +2,6 @@
 (set-default 'indent-tabs-mode nil)
 (set-default 'tab-width 2)
 
-;; Remove trailing whitespace before save.
-(add-hook 'before-save-hook 'delete-trailing-whitespace)
-
 ;; Replace selected text on new text entry.
 (pending-delete-mode t)
 
