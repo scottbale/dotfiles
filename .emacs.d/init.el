@@ -25,6 +25,9 @@
 
 ;; Make sure packages are installed.
 (setq package-enable-at-startup nil)
+;; -----work around gnu package archive
+;; (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
+;; (setq package-check-signature nil)
 (package-initialize)
 (require 'setup-package)
 
