@@ -47,6 +47,7 @@
    js2-mode
    php-mode
    yaml-mode
+   groovy-mode
    flycheck
    exec-path-from-shell
    cider
