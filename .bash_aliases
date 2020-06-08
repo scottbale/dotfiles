@@ -1,3 +1,9 @@
 alias gs="git status"
 alias lt="ls -lAtr"
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+alias java8="source java_8"
+alias java11="source java_11"
+alias javawut="javawtf"
+alias javawat="javawtf"
+alias watjava="javawtf"
+alias wutjava="javawtf"
+alias wtfjava="javawtf"

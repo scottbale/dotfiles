@@ -51,6 +51,8 @@
    flycheck
    exec-path-from-shell
    cider
+   go-mode
+   dockerfile-mode
    ))
 
 ;; Load configurations.
