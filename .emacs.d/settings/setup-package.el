@@ -1,7 +1,8 @@
 (require 'package)
 (require 'cl)
 
-(add-to-list 'package-archives '("melpa" . "http://melpa-stable.milkbox.net/packages/") t)
+(add-to-list 'package-archives '("melpa" . "https://stable.melpa.org/packages/") t)
+;; (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 
 (package-initialize)
 
