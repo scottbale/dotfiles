@@ -3,6 +3,10 @@
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
+;; TLS
+(custom-set-variables
+ '(gnutls-algorithm-priority "normal:-vers-tls1.3"))
+
 ;; Set up stock dark color theme early in case of downstream errors
 (load-theme 'misterioso t)
 
