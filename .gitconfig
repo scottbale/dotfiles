@@ -16,3 +16,5 @@
   renameLimit = 6194
 [rebase]
   instructionFormat = "%h%x20%ad%x20%an%x20%s"
+[pull]
+	ff = only
