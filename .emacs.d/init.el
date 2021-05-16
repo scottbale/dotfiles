@@ -10,6 +10,12 @@
 ;; Set up stock dark color theme early in case of downstream errors
 (load-theme 'misterioso t)
 
+;; OS X meta keys
+(setq mac-option-key-is-meta nil)
+(setq mac-command-key-is-meta t)
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier nil)
+
 ;; No splash screen.
 (setq inhibit-startup-message t)
 
