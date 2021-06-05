@@ -3,12 +3,13 @@
 .bash_history
 .bash_logout
 .ido.last
+.sshagent
 .viminfo
-.m2/
 .CFUserTextEncoding
 .DS_Store
 .bash_sessions/
 .cups/
 .dropbox/
+.emacs.d/
+.m2/
 .ssh/
-.sshagent
