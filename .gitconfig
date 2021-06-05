@@ -1,5 +1,5 @@
 [user]
-	email = scott.bale@datastax.com
+	email = scott.bale@nubank.com.br
 	name = Scott Bale
 [alias]
     co = checkout
@@ -11,10 +11,15 @@
     nuke = clean -d -x --force --quiet
     wut = diff --name-only
 [core]
-	editor = zile
+	editor = mg
 [diff]
   renameLimit = 6194
 [rebase]
   instructionFormat = "%h%x20%ad%x20%an%x20%s"
 [pull]
 	ff = only
+[filter "lfs"]
+	smudge = git-lfs smudge --skip %f
+	process = git-lfs filter-process --skip
+	clean = git-lfs clean -- %f
+	required = True
