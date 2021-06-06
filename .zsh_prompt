@@ -1,0 +1,25 @@
+# ---------------------
+# simple prompt
+# %~ - path
+# %# - prompt
+# ---------------------
+# PROMPT='%~ %# '
+
+# ---------------------
+# git integration
+# ---------------------
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+# ---------------------
+# %F{...} foreground text color
+# %f revert to default foreground color
+# %b branch
+# %r repository name
+# ---------------------
+zstyle ':vcs_info:git:*' formats '%F{green}%b%f'
+# zstyle ':vcs_info:*' enable git
+PROMPT='%~ '\$vcs_info_msg_0_' %# '
+
+export PROMPT
