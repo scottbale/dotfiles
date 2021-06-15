@@ -1,4 +1,4 @@
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
 
 # ssh agent: create or reuse existing (if creating, identities will
 # have to be manually added via ssh-add)
