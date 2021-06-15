@@ -1,6 +1,7 @@
 [user]
 	email = scott.bale@nubank.com.br
 	name = Scott Bale
+	signingkey = D94FC89ECD89622F
 [alias]
     co = checkout
     up = checkout
@@ -10,6 +11,7 @@
     wzup = ls-files --ignored --others --exclude-standard --directory
     nuke = clean -d -x --force --quiet
     wut = diff --name-only
+    wat = lg --stat
 [core]
 	editor = mg
 [diff]
@@ -19,9 +21,11 @@
 [pull]
 	ff = only
 [filter "lfs"]
-	smudge = git-lfs smudge --skip %f
-	process = git-lfs filter-process --skip
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
 	clean = git-lfs clean -- %f
-	required = True
+	required = true
+[commit]
+	gpgsign = true
 [url "git@github.com:"]
 	insteadOf = https://github.com/
