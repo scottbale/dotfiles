@@ -10,3 +10,9 @@ then
     ssh-agent > "$HOME/.sshagent"
     . "$HOME/.sshagent" > /dev/null
 fi
+
+export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
+source $HOME/.zsh_aliases
+source $HOME/.nurc

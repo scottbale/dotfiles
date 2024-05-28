@@ -1,4 +1,4 @@
 # dotfiles
 
-Branch for macOS Big Sur dotfiles
+Branch for macOS Sonoma dotfiles
 

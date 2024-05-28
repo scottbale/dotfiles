@@ -4,6 +4,7 @@
 .bash_logout
 .ido.last
 .lesshst
+.localized
 .nurc
 .okta*
 .sshagent
@@ -11,6 +12,7 @@
 .zsh_history
 .zshrc
 .CFUserTextEncoding
+.Trash/
 .DS_Store
 .ansible/
 .aws/
@@ -21,6 +23,10 @@
 .docker/
 .dropbox/
 .emacs.d/
+.gnupg/
+.gnupg_pre_2.1/
+.gradle/
+.jenv/
 .lein/
 .m2/
 .node*/
@@ -28,3 +34,5 @@
 .nvm/
 .pyenv/
 .ssh/
+.sbt/
+.zsh_sessions/
