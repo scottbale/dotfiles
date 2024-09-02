@@ -1,0 +1,16 @@
+#  -------------------------------------------------------------
+#  Mainly my $PATH stuff common to all shells but which needs to
+#  be at the front of the $PATH and so cannot be set in
+#  ~/.zshenv.
+#
+#  This file is sourced by ~/.zshrc and ~/.zprofile.
+#  -------------------------------------------------------------
+
+# export PATH="/usr/local/bin:$PATH"
+# export PATH="/usr/local/sbin:$PATH"
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
+export PATH="/usr/local/opt/curl/bin:$PATH"
+export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
