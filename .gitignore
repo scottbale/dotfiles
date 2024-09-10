@@ -28,3 +28,7 @@
 .nvm/
 .pyenv/
 .ssh/
+.Trash/
+.fontconfig/
+.oracle_jre_usage/
+.vscode/
