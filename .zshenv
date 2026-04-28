@@ -11,7 +11,6 @@
 #  -------------------------------------------------------------
 
 source $HOME/.zsh_aliases
-source $HOME/.nurc
 
 # ssh agent: create or reuse existing (if creating, identities will
 # have to be manually added via ssh-add)

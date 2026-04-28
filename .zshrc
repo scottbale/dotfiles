@@ -14,7 +14,4 @@ source $HOME/.zpath
 # fzf
 # https://thevaluable.dev/fzf-shell-integration/
 # only needed in interactive shell ...?
-source <(fzf --zsh)
-
-# Moved here from .zshenv, needs to be ahead of /usr/bin/java in PATH
-# eval "$(jenv init -)"
+# source <(fzf --zsh)
