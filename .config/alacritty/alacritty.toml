@@ -1,0 +1,296 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/solarized_light.toml"
+]
+
+# ──────────────────────────────────────────────────────────────────────
+# Window / general
+# ──────────────────────────────────────────────────────────────────────
+
+[window]
+opacity = 1.0
+decorations = "buttonless"     # macOS title-bar buttons hidden, drag still works
+startup_mode = "Windowed"
+padding = { x = 6, y = 6 }
+dynamic_padding = false
+# Lets ⌥ also act as Meta (bonus path — costs nothing, gives you
+# both ⌥-as-Meta AND ⌘-as-Meta after the bindings below).
+option_as_alt = "Both"
+
+[scrolling]
+history = 10000                # tmux has its own scrollback; this catches pre-tmux output
+
+[font]
+size = 16.0
+
+[font.normal]
+family = "Menlo"               # swap for "JetBrains Mono", "Iosevka", etc.
+style = "Regular"
+
+[font.bold]
+family = "Menlo"
+style = "Bold"
+
+[font.italic]
+family = "Menlo"
+style = "Italic"
+
+[cursor]
+style = { shape = "Block", blinking = "Off" }
+unfocused_hollow = true
+
+[mouse]
+hide_when_typing = true
+
+# Colors come from the solarized_light theme imported above — no [colors.*]
+# blocks here on purpose.
+
+# ──────────────────────────────────────────────────────────────────────
+# Keybindings
+#
+# Strategy:
+#  - Every ⌘<key> we want as Meta sends "^[<key>" (ESC + key).
+#  - C / V / Q / X are intentionally absent from the Meta list, so
+#    Alacritty's default ⌘C=Copy, ⌘V=Paste survive, ⌘Q quits via the
+#    Cocoa app menu, and ⌘X falls through to nothing (terminals don't
+#    have a meaningful Cut).
+#  - We restate ⌘C and ⌘V as defensive belt-and-suspenders.
+# ──────────────────────────────────────────────────────────────────────
+
+# --- Exceptions: keep as macOS shortcuts ---
+
+[[keyboard.bindings]]
+key = "C"
+mods = "Command"
+action = "Copy"
+
+[[keyboard.bindings]]
+key = "V"
+mods = "Command"
+action = "Paste"
+
+# (⌘Q is handled by the Alacritty app menu — no binding needed.
+#  ⌘X is left unbound; it just does nothing inside the terminal.)
+
+# --- ⌘<letter> as Meta+letter (a–z, excluding c v q x) ---
+
+[[keyboard.bindings]]
+key = "A"
+mods = "Command"
+chars = "\u001Ba"
+
+[[keyboard.bindings]]
+key = "B"
+mods = "Command"
+chars = "\u001Bb"
+
+[[keyboard.bindings]]
+key = "D"
+mods = "Command"
+chars = "\u001Bd"
+
+[[keyboard.bindings]]
+key = "E"
+mods = "Command"
+chars = "\u001Be"
+
+[[keyboard.bindings]]
+key = "F"
+mods = "Command"
+chars = "\u001Bf"
+
+[[keyboard.bindings]]
+key = "G"
+mods = "Command"
+chars = "\u001Bg"
+
+[[keyboard.bindings]]
+key = "H"
+mods = "Command"
+chars = "\u001Bh"
+
+[[keyboard.bindings]]
+key = "I"
+mods = "Command"
+chars = "\u001Bi"
+
+[[keyboard.bindings]]
+key = "J"
+mods = "Command"
+chars = "\u001Bj"
+
+[[keyboard.bindings]]
+key = "K"
+mods = "Command"
+chars = "\u001Bk"
+
+[[keyboard.bindings]]
+key = "L"
+mods = "Command"
+chars = "\u001Bl"
+
+[[keyboard.bindings]]
+key = "M"
+mods = "Command"
+chars = "\u001Bm"
+
+[[keyboard.bindings]]
+key = "N"
+mods = "Command"
+chars = "\u001Bn"
+
+[[keyboard.bindings]]
+key = "O"
+mods = "Command"
+chars = "\u001Bo"
+
+[[keyboard.bindings]]
+key = "P"
+mods = "Command"
+chars = "\u001Bp"
+
+[[keyboard.bindings]]
+key = "R"
+mods = "Command"
+chars = "\u001Br"
+
+[[keyboard.bindings]]
+key = "S"
+mods = "Command"
+chars = "\u001Bs"
+
+[[keyboard.bindings]]
+key = "T"
+mods = "Command"
+chars = "\u001Bt"
+
+[[keyboard.bindings]]
+key = "U"
+mods = "Command"
+chars = "\u001Bu"
+
+[[keyboard.bindings]]
+key = "W"
+mods = "Command"
+chars = "\u001Bw"
+
+[[keyboard.bindings]]
+key = "Y"
+mods = "Command"
+chars = "\u001By"
+
+[[keyboard.bindings]]
+key = "Z"
+mods = "Command"
+chars = "\u001Bz"
+
+# --- ⌘<digit> as Meta+digit (useful for tmux window-switch, readline
+#     numeric arguments, etc.) ---
+
+[[keyboard.bindings]]
+key = "Key0"
+mods = "Command"
+chars = "\u001B0"
+
+[[keyboard.bindings]]
+key = "Key1"
+mods = "Command"
+chars = "\u001B1"
+
+[[keyboard.bindings]]
+key = "Key2"
+mods = "Command"
+chars = "\u001B2"
+
+[[keyboard.bindings]]
+key = "Key3"
+mods = "Command"
+chars = "\u001B3"
+
+[[keyboard.bindings]]
+key = "Key4"
+mods = "Command"
+chars = "\u001B4"
+
+[[keyboard.bindings]]
+key = "Key5"
+mods = "Command"
+chars = "\u001B5"
+
+[[keyboard.bindings]]
+key = "Key6"
+mods = "Command"
+chars = "\u001B6"
+
+[[keyboard.bindings]]
+key = "Key7"
+mods = "Command"
+chars = "\u001B7"
+
+[[keyboard.bindings]]
+key = "Key8"
+mods = "Command"
+chars = "\u001B8"
+
+[[keyboard.bindings]]
+key = "Key9"
+mods = "Command"
+chars = "\u001B9"
+
+# --- A few common Meta-punctuation bindings worth having ---
+
+# M-. → readline yank-last-arg (very useful in zsh)
+[[keyboard.bindings]]
+key = "Period"
+mods = "Command"
+chars = "\u001B."
+
+# M-,
+[[keyboard.bindings]]
+key = "Comma"
+mods = "Command"
+chars = "\u001B,"
+
+# M-/ → readline dabbrev-expand etc.
+[[keyboard.bindings]]
+key = "Slash"
+mods = "Command"
+chars = "\u001B/"
+
+# M-;
+[[keyboard.bindings]]
+key = "Semicolon"
+mods = "Command"
+chars = "\u001B;"
+
+# M-- (negative argument in readline)
+[[keyboard.bindings]]
+key = "Minus"
+mods = "Command"
+chars = "\u001B-"
+
+# M-Space (just-one-space)
+[[keyboard.bindings]]
+key = "Space"
+mods = "Command"
+chars = "\u001B "
+
+# --- Shifted Meta bindings (M-< M-> M-? are common) ---
+
+# M-< → history-top
+[[keyboard.bindings]]
+key = "<"
+mods = "Command|Shift"
+chars = "\u001B<"
+
+# M-> → history-bottom
+[[keyboard.bindings]]
+key = ">"
+mods = "Command|Shift"
+chars = "\u001B>"
+
+# M-? → possible-completions
+[[keyboard.bindings]]
+key = "?"
+mods = "Command|Shift"
+chars = "\u001B?"
